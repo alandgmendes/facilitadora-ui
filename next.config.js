@@ -1,3 +1,5 @@
-module.exports = {
-  reactStrictMode: true
-};
+const withTM = require('next-transpile-modules')();
+
+module.exports = withTM({
+  /* your other next.js config */
+});
