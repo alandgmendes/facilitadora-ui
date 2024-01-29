@@ -17,6 +17,7 @@ export const AccountProfile = () => {
 
   const isAuthenticated = useAuthContext();
   const user = isAuthenticated?.user || null;
+  debugger;
   return(
     <Card>
       <CardContent>
@@ -31,13 +32,13 @@ export const AccountProfile = () => {
             gutterBottom
             variant="h5"
           >
-            {user?.pessoa.nome}
+            {user?.pessoa?.nome}
           </Typography>
           <Typography
             color="text.secondary"
             variant="body2"
           >
-            {user?.pessoa.acessadoEm}
+            {user?.pessoa?.acessadoEm}
           </Typography>
           <Typography
             color="text.secondary"
