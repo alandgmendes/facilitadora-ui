@@ -138,6 +138,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         throw new Error("Invalid email or password"); 
       }
     }
+    console.log(email);
+    console.log(password);
+    debugger;
     const response = await loginCall(email, password);
     const user = await extractUserAndPessoa(response);
     const userStr= JSON.stringify(user);

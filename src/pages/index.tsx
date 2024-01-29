@@ -19,6 +19,7 @@ const now = new Date();
 const Page = () => {
   const isAuthenticated = useAuthContext();
   const user = isAuthenticated?.user;
+  console.log(user);
   debugger;
   return (<>
     <Head>
@@ -38,7 +39,7 @@ const Page = () => {
             <Typography 
             variant="h4" 
             gutterBottom>
-              Welcome, {user.pessoa.nome}!
+              Welcome, {user?.pessoa?.nome}!
             </Typography>
           )}
         <Grid

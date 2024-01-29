@@ -165,7 +165,7 @@ export const SideNav = (props) => {
           </Stack>
         </Box>
         <Divider sx={{ borderColor: 'neutral.700' }} />
-        <Box
+        {/*<Box
           sx={{
             px: 2,
             py: 3
@@ -214,7 +214,7 @@ export const SideNav = (props) => {
           >
             Pro Live Preview
           </Button>
-        </Box>
+            </Box>*/}
       </Box>
     </Scrollbar>
   );

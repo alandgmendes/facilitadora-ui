@@ -48,15 +48,14 @@ const Page = () => (
             sx={{ mb: 3 }}
             variant="h3"
           >
-            404: The page you are looking for isn’t here
+            404: Página não encontrada
           </Typography>
           <Typography
             align="center"
             color="text.secondary"
             variant="body1"
           >
-            You either tried some shady route or you came here by mistake.
-            Whichever it is, try using the navigation
+            O link fornecido a você expirou, ou estava quebrado
           </Typography>
           <Button
             component={NextLink}
@@ -69,7 +68,7 @@ const Page = () => (
             sx={{ mt: 3 }}
             variant="contained"
           >
-            Go back to dashboard
+            Retornar ao Dashboard
           </Button>
         </Box>
       </Container>
